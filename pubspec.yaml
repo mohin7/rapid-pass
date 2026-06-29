@@ -1,0 +1,81 @@
+name: dhaka_metro_app
+description: "Rapid Pass BD — Dhaka Metro Rapid Pass Balance & Trip History"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.6.1
+  hooks_riverpod: ^2.6.1
+  flutter_hooks: ^0.20.5
+  riverpod_annotation: ^2.6.1
+
+  # Navigation
+  go_router: ^14.6.2
+
+  # Data / Serialization
+  freezed_annotation: ^2.4.4
+  json_annotation: ^4.9.0
+
+  # Storage
+  shared_preferences: ^2.3.5
+  flutter_secure_storage: ^9.2.4
+
+  # Authentication
+  local_auth: ^2.3.0
+
+  # NFC
+  nfc_manager: ^3.3.0
+
+  # Permissions
+  permission_handler: ^11.4.0
+
+  # Animations
+  flutter_animate: ^4.5.2
+
+  # Charts
+  fl_chart: ^0.69.0
+
+  # UI Utilities
+  shimmer: ^3.0.0
+  gap: ^3.0.1
+  google_fonts: ^6.2.1
+
+  # Utilities
+  intl: ^0.20.2
+  logger: ^2.5.0
+
+  # Icons
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.4.13
+  freezed: ^2.5.7
+  json_serializable: ^6.9.0
+  riverpod_generator: ^2.6.1
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/animations/
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  remove_alpha_ios: true
