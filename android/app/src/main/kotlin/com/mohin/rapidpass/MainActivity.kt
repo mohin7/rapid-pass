@@ -1,4 +1,4 @@
-package com.example.dhaka_metro_app
+package com.mohin.rapidpass
 
 import io.flutter.embedding.android.FlutterActivity
 
